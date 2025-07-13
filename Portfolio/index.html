@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sujit's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/20fb8d1db6.js" crossorigin="anonymous"></script>
+  <meta name="description" content="Sujit Ray - Web and App Developer Portfolio from Nepal." />
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo" alt="Sujit's Logo" />
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="header-text">
+        <p>Web and App Developer</p>
+        <h1>Hi, I'm Sujit Ray <br> from Nepal</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div id="about">
+    <div class="container">
+      <div class="content">
+        <h1 class="sub-title">About Me</h1>
+        <p class="about-disc">
+          A highly motivated individual looking to kickstart a career <br>
+          in web and app development. While I am a fresher in the market, <br>
+          I bring a strong foundation in web development, app development, <br>
+          data structures, algorithms, and problem-solving.
+        </p>
+
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+          <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+          <p class="tab-links" onclick="opentab('education', event)">Education</p>
+        </div>
+
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>Digital Marketing</span><br>Django</li>
+            <li><span>Web Development</span><br>Web App Development</li>
+            <li><span>UI/UX</span><br>Building Android/iOS Apps</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>SEO</span><br>Worked with Django projects</li>
+            <li><span>Book Review App</span><br>Built a book library platform</li>
+            <li><span>UI/UX</span><br>Designed Android/iOS apps</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2026</span><br>B.Tech (CSE)</li>
+            <li><span>2022</span><br>+2 (Higher Secondary)</li>
+            <li><span>2020</span><br>Schooling</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services Section -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Development</h2>
+          <p>Responsive and dynamic websites using HTML, CSS, JS, and frameworks like Django.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store-ios"></i>
+          <h2>App Development</h2>
+          <p>Building mobile applications for Android and iOS with clean UI/UX.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-money-bill-trend-up"></i>
+          <h2>Digital Marketing</h2>
+          <p>SEO, social media management, and online branding to grow your business.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Section -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-1.png" alt="Social Media App">
+          <div class="layer">
+            <h3>Social Media App</h3>
+            <p>This app connects you with talented people around the world.</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-2.png" alt="Music App">
+          <div class="layer">
+            <h3>Music App</h3>
+            <p>Stream and discover new music from artists worldwide.</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.png" alt="Online Shopping App">
+          <div class="layer">
+            <h3>Online Shopping App</h3>
+            <p>Shop the best deals with a seamless mobile shopping experience.</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See More</a>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact">
+    <div class="cont-container">
+      <div class="row">
+        <div class="cotact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-light fa-paper-plane"></i>lomasray23@gmail.com</p><br>
+          <p><i class="fa-solid fa-phone"></i>+919311679831</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <a href="./images/Sujit ray final cv.pdf" download class="btn-dcv">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+            <button type="submit" class="btn-dcv">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright @ Sujit. Made with ❤️ by Sujit Ray.</p>
+    </div>
+  </div>
+
+  <!-- JS for Tabs -->
+  <script>
+    const tabLinks = document.getElementsByClassName("tab-links");
+    const tabContents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabName, event) {
+      for (let link of tabLinks) {
+        link.classList.remove("active-link");
+      }
+      for (let content of tabContents) {
+        content.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabName).classList.add("active-tab");
+    }
+  </script>
+
+  <!-- Contact Form Script -->
+  <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwbleIswjThRJKWOgbs-ClUO2opgEO3YId6ThaO9_oyTDZ3UCWRXBP5btZQ1v--b84f/exec';
+  const form = document.forms['submit-to-google-sheet'];
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        alert("Message sent successfully!");
+        form.reset(); // Clear form
+      })
+      .catch(error => {
+        alert("Oops! Something went wrong.");
+        console.error('Error!', error.message);
+      });
+  });
+</script>
+
+</body>
+</html>
